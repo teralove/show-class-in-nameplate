@@ -1,6 +1,6 @@
 module.exports = function ShowClassInName(dispatch) {
     
-    const ClassNames = [
+    const JobNames = [
         'Warrior', 'Lancer', 'Slayer', 'Berserker', 'Sorcerer', 'Archer', 'Priest', 'Mystic', 'Reaper', 'Gunner', 'Brawler', 'Ninja', 'Valkyrie'
     ];
     
