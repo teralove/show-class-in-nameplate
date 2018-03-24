@@ -6,11 +6,7 @@ module.exports = function ShowClassInName(dispatch) {
     
     dispatch.hook('S_SPAWN_USER', (event) => {
         let job = (event.templateId  - 10101) % 100;
-        
-        event.name = event.name + ' (' + JobNames[job] + ')';       // Show name and class... "Adam (Warrior)"
-        //event.name = event.name + ' - ' + JobNames[job];            // Show name and class... "Adam - Warrior"
-        //event.name = event.name + ' (' + JobNames[job] + ')';       // Show only the class... "Warrior"
-        
+        event.guild = JobNames[job];
         return true;
     });
 }
